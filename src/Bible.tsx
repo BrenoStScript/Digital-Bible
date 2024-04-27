@@ -1,7 +1,7 @@
 import Books from "./Books";
 import Versions from "./Versions";
 import Button from "./Button";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Bible() {
   const [version, setVersion] = useState("acf");

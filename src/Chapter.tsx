@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Chapter(props: any) {
   const [open, setOpen] = useState(false);
@@ -12,7 +12,7 @@ function Chapter(props: any) {
 
   return (
     <div className="flex">
-        <h1 className=" text-2xl mr-2">Capítulo:</h1>
+      <h1 className=" text-2xl mr-2">Capítulo:</h1>
       <div className="h-11">
         <button
           onClick={() => setOpen((prev) => !prev)}
@@ -34,11 +34,6 @@ function Chapter(props: any) {
               );
             })}
           </div>
-
-
-
-
-
         )}
       </div>
     </div>

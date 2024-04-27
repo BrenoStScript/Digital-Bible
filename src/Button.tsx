@@ -1,6 +1,6 @@
 import useFetch from "./useFetch";
 function Button(props: any) {
-  const { data, loading, error, fetchData } = useFetch(
+  const { data, loading, fetchData } = useFetch(
     "https://www.abibliadigital.com.br/api/verses/" +
       props.version +
       "/" +
@@ -28,8 +28,11 @@ function Button(props: any) {
     let verses = data.verses;
 
     return (
-      <div>
-        <button className=" mt-6 w-20 h-14 p-1 border-4 hover:bg-slate-500" onClick={newFetch}>
+      <div className="m-3 p-2" >
+        <button
+          className=" mt-6 w-20 h-14 p-1 border-4 hover:bg-slate-500"
+          onClick={newFetch}
+        >
           {props.name}
         </button>
         {verses.map((element: any) => {
@@ -46,7 +49,10 @@ function Button(props: any) {
   }
 
   return (
-    <button className=" m-1 h-14 w-20 p-1 border-4 hover:bg-slate-500" onClick={newFetch}>
+    <button
+      className=" m-1 h-14 w-20 p-1 border-4 hover:bg-slate-500"
+      onClick={newFetch}
+    >
       {props.name}
     </button>
   );

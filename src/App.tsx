@@ -1,4 +1,3 @@
-import React from "react";
 import Bible from "./Bible";
 
 function App() {
