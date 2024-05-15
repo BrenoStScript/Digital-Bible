@@ -6,7 +6,7 @@ function Versions(props: any) {
   return (
     <div className=" mt-6 flex flex-col justify-center items-center">
        <h1 className="text-2xl mr-2">Versão</h1>
-        <div className="p-2 border-4 grid grid-cols-7 justify-center w-96 gap-2 text-justify my-2">
+        <div className="p-2 border-4 grid grid-cols-3 sm:grid-cols-7 justify-center w-44 sm:w-96 gap-2 text-justify my-2">
         {versions.map((element) => {
           if (element === props.version) {
             return (

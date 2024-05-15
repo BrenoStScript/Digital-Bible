@@ -9,8 +9,8 @@ function Bible() {
   const [chapter, setChapter] = useState(1);
 
   return (
-    <div className=" mb-16 mt-16 bg-gray-600 w-2/3 min-h-96 h-3/4 flex flex-col items-center justify-center">
-      <h1 className=" text-4xl font-semibold ">Bíblia Digital</h1>
+    <div className=" p-4 mb-16 mt-16 bg-gray-600 w-2/3 min-h-96 h-3/4 flex flex-col items-center justify-center">
+      <h1 className=" text-2xl sm:text-4xl font-semibold ">Bíblia Digital</h1>
       <div className="flex flex-col items-center mt-3">
         <Versions version={version} function={setVersion} />
         <Books

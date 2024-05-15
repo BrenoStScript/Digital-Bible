@@ -271,7 +271,7 @@ function Books(props: any) {
   ];
 
   return (
-    <div className=" z-10 flex m-4">
+    <div className=" z-10 flex flex-wrap items-center justify-center m-4">
       <h1 className=" text-2xl mr-2">Livro:</h1>
       <div className=" h-11">
         <button
